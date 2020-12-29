@@ -1,0 +1,100 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>分级导航菜单</title>
+	<link href="css/zzsc.css" type="text/css" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(".subNav").click(function () {
+				$(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd")
+				$(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt")
+
+				// 修改数字控制速度， slideUp(500)控制卷起速度
+				$(this).next(".navContent").slideToggle(500).siblings(".navContent").slideUp(300);
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<!-- 代码 开始 -->
+	<img src="images/beijing011.jpg" width="137" height="65" />
+	<div class="subNavBox">
+		<div class="subNav currentDd currentDt">人员信息</div>
+		<ul class="navContent " style="display:block">
+			<li><a href="mingce.php" target="inframe">职工名册</a></li>
+			<li><a href="zhigongxinxi.php" target="inframe">基本信息</a></li>
+			<li><a href="dangyuan.php" target="inframe">党员信息</a></li>
+			<li><a href="ganburenmian.php" target="inframe">干部任免信息</a></li>
+			<li><a href="#">预留</a></li>
+			<li><a href="#">预留</a></li>
+		</ul>
+		<div class="subNav">人员管理</div>
+		<ul class="navContent">
+			<li><a href="cizhicitui.php" target="inframe">辞职辞退</a></li>
+			<li><a href="qingjiajilu.php" target="inframe">请假记录</a></li>
+			<li><a href="#">停岗停职</a></li>
+			<li><a href="diaodong.php" target="inframe">人员调动</a></li>
+			<li><a href="#">评优奖励</a></li>
+			<li><a href="#">违规处罚</a></li>
+			<li><a href="#">招聘应聘</a></li>
+			<li><a href="#">预留</a></li>
+			<li><a href="#">预留</a></li>
+		</ul>
+		<div class="subNav">社会保险</div>
+		<ul class="navContent">
+			<li><a href="baoxianyjn_yanglao.php" target="inframe">保险缴纳(养老)</a></li>
+			<li><a href="baoxianyjn_shiye.php" target="inframe">保险缴纳(失业)</a></li>
+			<li><a href="baoxianyjn_yiliao.php" target="inframe">保险缴纳(医疗)</a></li>
+			<li><a href="baoxianyjn_gongsang.php" target="inframe">保险缴纳(工伤)</a></li>
+			<li><a href="baoxianyjn_shengyu.php" target="inframe">保险缴纳(生育)</a></li>
+			<li><a href="baoxianyjn_gongjijin.php" target="inframe">公积金缴纳</a></li>
+			<li><a href="baoxian_bjbk.php" target="inframe">保险补交补扣</a></li>
+			<li><a href="#">预留</a></li>
+			<li><a href="#">预留</a></li>
+
+		</ul>
+		<div class="subNav">工资管理</div>
+		<ul class="navContent">
+			<li><a href="gongzibiaozhun.php" target="inframe">工资标准批示</a></li>
+			<li><a href="#">临时补助批示</a></li>
+			<li><a href="#">工资统计(公司)</a></li>
+			<li><a href="#">工资统计(派遣)</a></li>
+			<li><a href="#">其它发放记录</a></li>
+			<li><a href="#">保险代扣(公司)</a></li>
+			<li><a href="#">保险代扣(派遣)</a></li>
+			<li><a href="#">预留</a></li>
+			<li><a href="#">预留</a></li>
+
+		</ul>
+		<div class="subNav">文件资料</div>
+		<ul class="navContent">
+			<li><a href="wenjian.php" target="inframe">文件存档索引</a></li>
+			<li><a href="#">会议纪要(公司)</a></li>
+			<li><a href="#">会议纪要(部门)</a></li>
+			<li><a href="#">下发通知通告</a></li>
+			<li><a href="#">劳动纠纷投诉</a></li>
+			<li><a href="#">答复回函说明</a></li>
+			<li><a href="#">媒体公告通知</a></li>
+			<li><a href="#">职代会资料</a></li>
+			<li><a href="#">预留</a></li>
+			<li><a href="#">预留</a></li>
+		</ul>
+	</div>
+
+	<!-- 代码 结束 -->
+	<div style="width: 134px; position:absolute;bottom:0;text-align:center;margin:1px 0; font:14px 'MicroSoft YaHei';">
+		<p style="color: red;">*******************</p>
+		<p style="text-align: center;color: red;font-family: sumhei;"> <strong>人劳部工作数据库</strong> </p>
+		<p style="text-align: center;color: red;"> <strong>严禁拷贝复制</strong> </p>
+		<p style="color: red;">*******************</p>
+	<!-- <p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>-->
+	</div>
+
+</body>
+
+</html>
